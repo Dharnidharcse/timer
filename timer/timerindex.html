@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 1px 10px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #000000;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px #505150;
+        }
+
+        .button:hover {
+            background-color: #f6f6f6
+        }
+
+        .button:active {
+            background-color: #000000;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        body {
+
+            color: rgb(10, 238, 18);
+            background-image: url('https://rb.gy/h3t24v');
+        }
+
+
+        h1,
+        h2 {
+            color: #0672fe;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #timer {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+
+        #event-name {
+            margin-top: 20px;
+        }
+
+        table {
+            margin: 50px auto;
+            border-collapse: 1px solid;
+            width: 50%;
+        }
+
+        th,
+        td {
+            background-color: #3f29e3;
+            color: #fbfbfb;
+            border: 1px solid #3ff607;
+            text-align: center;
+            padding: 10px;
+        }
+
+        tr:hover {
+            background-color: rgb(240, 255, 27);
+        }
+
+        label[for="event-name"] {
+            font-size: 20px;
+        }
+
+        input[type=text] {
+            border: 2px solid #3ff607;
+            border-radius: 4px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMER</title>
+    <link rel="icon" href="C:\Users\pbhuv\OneDrive\Desktop\intern\favicon-16x16.png" type="image/x-icon">
+</head>
+
+<body>
+    <a href="https://shorturl.at/elEH8" alt="background image" width="100%"></a>
+    <h1><b>
+            <center>Best  Timer
+        </b></center>
+    </h1>
+    <label for="event-name">Event Name:</label>
+    <input type="text" id="event-name"><br>
+    <span id="timer">00:00:00 </span><br> </span>
+
+    <button class="button" id="start-btn" onclick="startBtnClick()">START</button>
+    <br>
+    <button class="button" id="end-btn" onclick="stopBtnClick()">STOP</button><br>
+
+    <button class="button" id="reset-btn" onclick="resetBtnClick()">RESET</button><br>
+    <button class="button" id="flag-btn" onclick="flagBtnClick()">FLAG</button><br>
+    <button class="button" id="clear-btn" onclick="clearBtnClick()">CLEAR</button>
+    <table id="event-table">
+        <thead>
+            <tr>
+                <th>Event Name</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody id="event-records">
+        </tbody>
+    </table>
+    <script src="./script1.js"></script>
+</body>
+
+</html>
